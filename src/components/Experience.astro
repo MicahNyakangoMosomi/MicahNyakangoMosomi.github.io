@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "2023 July",
+    title: "Full-Stack Development (MERN):",
+    company: "Freelancer",
+    description:
+      "As a freelance developer, I’ve built multiple web applications for clients using the MERN stack React, Node.js, Express, and MongoDB. I handle both frontend architecture and backend logic, designing systems that are clean, responsive, and scalable.",
+    link: "#",
+  },
+  // {
+  //   date: "2023 July",
+  //   title: "Full-Stack Development (MERN):",
+  //   company: "Freelancer",
+  //   description:
+  //     "As a freelance developer, I’ve built multiple web applications for clients using the MERN stack React, Node.js, Express, and MongoDB. I handle both frontend architecture and backend logic, designing systems that are clean, responsive, and scalable.",
+  //   link: "https://twitch.tv/midudev",
+  // },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
