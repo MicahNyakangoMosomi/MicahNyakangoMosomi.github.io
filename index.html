@@ -4,37 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <title>Document</title>
+  <title>Micah Portfolio</title>
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
+    <section class="profile" id="about">
       <div class="profile-section">
         <img src="./src/img/me.jpg" alt="Profile Photo" class="profile-pic" />
         <span class="status-badge">Available for Work</span>
       </div>
-    </section>
-    <section>
-      <div class="timeline-item">
-        <div class="content">
-          <h3>Full-Stack Development (MERN):</h3>
-          <p>Freelancer</p>
-          <p class="date">2023 July</p>
-          <p>Developed a full-stack web application using the MERN stack, implementing features such as user authentication, real-time data updates, and responsive design.</p>
+        <div class="profile-info">
+          <h1>Hey, I'm Micah Mosomi</h1>
+          <p class="tagline">Full-Stack Developer | UI/UX Designer</p>
+          <p class="description">I'm a Software Engineer. <span>focused on programming and problem-solving. I build intelligent, real-world web applications with a strong focus on AI, backend logic, and user-centered design. </span>I specialize in turning complex challenges into simple, scalable software </p>
+        </div>
+        <div class="social-links">
+          <a href="mailto:youremail@example.com" class="btn">
+            <span class="icon">✉️</span> Contact me
+          </a>
+          <a href="https://www.linkedin.com/in/micah-mosomi-a63355267/" class="btn" target="_blank">
+            <span class="icon">🔗</span> LinkedIn
+          </a>
         </div>
       </div>
     </section>
+
+    <!-- Expereince Section -->
+    <section class="" id="experience">
+      <h1 class="title">Experience</h1>
+
+      <!-- Start of timeline-item -->
+      <div class="timeline">
+
+        <!-- ctimeline-item -->
+        <div class="timeline-item">
+          <div class="content">
+            <div>
+              <h3>Full-Stack Development (MERN):</h3>
+              <p>Freelancer</p>
+              <p class="date">2023 July</p>
+            </div>
+            <div>
+              <p>Developed a full-stack web application using the MERN stack, implementing features such as user authentication, real-time data updates, and responsive design.</p>
+              <p><span>Find Our more ></span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ctimeline-item -->
+        <div class="timeline-item">
+          <div class="content">
+            <div>
+              <h3>Full-Stack Development (MERN):</h3>
+              <p>Freelancer</p>
+              <p class="date">2023 July</p>
+            </div>
+            <div>
+              <p>Developed a full-stack web application using the MERN stack, implementing features such as user authentication, real-time data updates, and responsive design.</p>
+              <p><span>Find Our more ></span></p>
+            </div>    
+          </div>
+        </div>
+
+        <!-- ctimeline-item -->
+        <div class="timeline-item">
+          <div class="content">
+            <div>
+              <h3>Full-Stack Development (MERN):</h3>
+              <p>Freelancer</p>
+              <p class="date">2023 July</p>
+            </div>
+            <div>
+              <p>Developed a full-stack web application using the MERN stack, implementing features such as user authentication, real-time data updates, and responsive design.</p>
+              <p><span>Find Our more ></span></p>
+            </div>    
+          </div>
+        </div>
+   
+      </div>
+      <!-- End of timeline-item -->
+    </section>
+
+
+    <!-- project section -->
+    <section class="" id="projects">
+      <h1 class="title">Projects</h1>
+
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-image-container">
+              <img src="./src/img/EDU.jpg" alt="JOBSY Project Screenshot" class="project-image" />
+            </div>
+            
+        
+            <div class="project-info">
+              <h2 class="project-title">JOBSY – AI Powered Resume-Based Job Matcher</h2>
+        
+              <div class="tech-stack">
+                <span class="badge mongodb">MongoDB</span>
+                <span class="badge tailwind">Tailwind CSS</span>
+                <span class="badge react">react</span>
+              </div>
+        
+              <p class="project-description">
+                An AI-driven platform that analyzes your resume, scrapes real-time LinkedIn jobs, and matches you with roles you're truly qualified for—eliminating bias and guesswork in job hunting.
+              </p>
+        
+              <div class="project-buttons">
+                <a href="#" class="btn">Code</a>
+                <a href="#" class="btn">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      
+    </section>
+
+
 
   </main>
   
