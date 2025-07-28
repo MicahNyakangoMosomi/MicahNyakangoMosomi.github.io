@@ -511,3 +511,31 @@ a:hover {
   justify-content: center;
   margin-top: 20px;
 }
+
+
+footer {
+  background-color: #16192f; /* dark background */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 14px;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 50%;
+}
+footer div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  footer{
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+}
