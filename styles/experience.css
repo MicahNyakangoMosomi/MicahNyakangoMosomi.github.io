@@ -1,0 +1,71 @@
+/* EXPERIENCE SECTION STYLES*/
+
+.timeline {
+    position: relative;
+    padding-left: 30px; /* spacing from the line */
+    margin-bottom: 40px;
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px; /* spacing for the circle */
+  }
+  
+  /* line */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px; /* position the line */
+    height: 100%;
+    top:0 ;
+    bottom: 0;
+    width: 2px;
+    background-color: #FFB400; /* orange-yellow */
+  }
+  /* Circle */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -28px;
+    width: 14px;
+    height: 14px;
+    background-color: #FFB400;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #FFB400;
+  }
+  
+  
+  
+  .timeline-marker {
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #fdbb00; /* yellow dot */
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  
+  .timeline-item .content {
+    color: white;
+    background-color: #16192f; /* light background for content */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: flex;
+  }
+  .timeline-item .content:hover {
+    background-color: #16192f; /* slightly darker on hover */
+    cursor: pointer;
+    transform: scale(1.02); /* slight zoom effect */
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white; /* darker text on hover */
+  
+  }
+  
+  
