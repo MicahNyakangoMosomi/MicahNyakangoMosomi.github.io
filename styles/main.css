@@ -61,7 +61,7 @@ html{
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* full height */
+  min-height: 90vh; /* full height */
   margin: 0; /* remove default margin */
   font-family: 'Urbanist', sans-serif; /* default font */
   background-color: #16192f; /* dark background */
