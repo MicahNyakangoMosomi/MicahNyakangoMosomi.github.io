@@ -81,9 +81,9 @@ main{
   /* main content area */
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
-  padding: 10px; /* padding around the content */
+  padding: 20px; /* padding around the content */
 
 
 }
@@ -122,7 +122,7 @@ section{
   text-decoration: none;
   background: transparent;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   transition: all 0.2s ease-in-out;
 }
 
