@@ -83,7 +83,7 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 20px; /* padding around the content */
+  padding: 25px; /* padding around the content */
 
 
 }
