@@ -72,6 +72,8 @@ body {
   overflow-x: hidden; /* prevent horizontal scroll */
   font-size: 16px; /* base font size */
   align-items: center;
+  justify-content: center; /* center content vertically */
+  padding: 10px;
   
 }
 
@@ -82,6 +84,7 @@ main{
   justify-content: start;
   align-items: start;
   padding: 10px; /* padding around the content */
+
 
 }
 span{
