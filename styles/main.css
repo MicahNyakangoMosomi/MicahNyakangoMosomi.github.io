@@ -170,7 +170,7 @@ nav ul {
   background-color:rgba(0, 0, 0, 0.1); /* semi-transparent dark background */
   height: 30px;
   margin: 0;
-  padding: 7px 0 ;
+  padding:0;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -181,7 +181,7 @@ nav ul {
 
 } 
 nav ul li a{
-  margin: 0 10px;
+  margin: 0 7px;
   color: white; 
   font-size: 14px;
   text-decoration: none;
