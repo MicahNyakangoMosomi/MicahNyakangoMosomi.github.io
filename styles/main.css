@@ -227,6 +227,10 @@ nav ul li a{
   white-space: nowrap;
 }
 
+.attention{
+  background-color: #1FC9A0;
+}
+
 .social-links { 
   display: flex;
   gap: 1rem;
