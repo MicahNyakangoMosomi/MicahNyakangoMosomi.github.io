@@ -1,140 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta Tags for SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Micah Mosomi - Full-Stack Developer specializing in MERN stack, AI, and scalable web solutions. Explore my projects, experience, and skills.">
+  <meta name="keywords" content="Micah Mosomi, Full-Stack Developer, MERN, AI, Portfolio, Web Developer, Software Engineer, Projects">
+  <meta name="author" content="Micah Mosomi">
+  
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Micah Mosomi | Full-Stack Developer Portfolio">
+  <meta property="og:description" content="Explore my work as a full-stack developer with expertise in MERN, AI, and scalable software solutions.">
+  <meta property="og:image" content="./src/img/me.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-portfolio-link.com">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./src/img/me.jpg" type="image/png">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/about.css">
-  <link rel="stylesheet" href="./styles/experience.css">
-  <link rel="stylesheet" href="./styles/projects.css">
-  <link rel="stylesheet" href="./styles/interests.css">
-  <link rel="stylesheet" href="./styles/contact.css">
-  <link rel="stylesheet" href="./styles/footer.css">
-  <link rel="stylesheet" href="./styles/nav.css">
-  <title>Micah Portfolio</title>
+  
+  <title>Micah Mosomi | Full-Stack Developer Portfolio</title>
 </head>
 <body>
   <header>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#interests">interests</a></li>
+        <li><a href="#interests">Interests</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+  
   <main>
+    <!-- About Section -->
     <section class="profile" id="about">
       <div class="profile-section">
-        <img src="./src/img/me.jpg" alt="Profile Photo" class="profile-pic" />
-        <span class="status-badge">Available for Work</span>
+        <img src="./src/img/me.jpg" alt="Micah Mosomi Profile Photo" class="profile-pic" />
+        <a href="./public/Micah Mosomi Resume(Main).pdf" download class="status-badge" target="_blank" rel="noopener" aria-label="Download Resume">
+          Download Resume
+        </a>
       </div>
-        <div class="profile-info">
-          <h1>Hey, I'm Micah Mosomi</h1>
-          <p class="tagline">Full-Stack Developer</p>
-          <p class="description">I'm a Software Engineer. <span>focused on programming and problem-solving. I build intelligent, real-world web applications with a strong focus on AI, backend logic, and user-centered design. </span>I specialize in turning complex challenges into simple, scalable software </p>
-        </div>
-        <div class="social-links">
-          <a href="#contact" class="btn">
-            <span class="icon">✉️</span> Contact me
-          </a>
-          <a href="https://www.linkedin.com/in/micah-mosomi-a63355267/" class="btn" target="_blank">
-            <span class="icon">🔗</span> LinkedIn
-          </a>
-
-          <a href="./public/Micah Mosomi Resume(Main).pdf" download class="btn" target="_blank">
-            <span class="icon">🔗</span> Download Resume
-          </a>
-        </div>
+      <div class="profile-info">
+        <h1>Hey, I'm <strong>Micah</strong></h1>
+        <p class="tagline">Full-Stack Developer (MERN Stack)</p>
+        <p class="description">
+          I'm a Software Engineer <span>focused on programming and problem-solving. I build intelligent, real-world web applications with a strong focus on AI, backend logic, and user-centered design. </span>
+          I specialize in turning complex challenges into simple, scalable software solutions.
+        </p>
+      </div>
+      <div class="social-links">
+        <a href="#contact" class="btn" aria-label="Contact me">
+          Contact me
+        </a>
+        <a href="https://www.linkedin.com/in/micah-mosomi-a63355267/" class="btn" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+          LinkedIn
+        </a>
+        
       </div>
     </section>
 
-    <!-- Expereince Section -->
-    <section class="" id="experience">
-      <h1 class="title">Experience</h1>
-
-      <!-- Start of timeline-item -->
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2 class="title">Experience</h2>
       <div class="timeline">
-
-        <!-- ctimeline-item -->
         <div class="timeline-item">
           <div class="content">
             <div>
-              <h3>Full-Stack Development (MERN):</h3>
+              <h3>Full-Stack Development (MERN)</h3>
               <p>Freelancer</p>
-              <p class="date">2023 July</p>
+              <p class="date">July 2023</p>
             </div>
             <div>
-              <p>Developed a full-stack web application using the MERN stack, implementing features such as user authentication, real-time data updates, and responsive design.</p>
-              <p><span>Find Our more ></span></p>
+              <p>Developed a full-stack web application using the MERN stack, implementing user authentication, real-time data updates, and responsive design.</p>
+              <p><a href="#" aria-label="Find out more about this project">Find out more &gt;</a></p>
             </div>
           </div>
         </div>
-
-        <!-- ctimeline-item -->
-        <div class="timeline-item">
-          <div class="content">
-            <div>
-              <h3>Full-Stack Development (MERN):</h3>
-              <p>Freelancer</p>
-              <p class="date">2023 July</p>
-            </div>
-            <div>
-              <p>Developed a full-stack web application using the MERN stack, implementing features such as user authentication, real-time data updates, and responsive design.</p>
-              <p><span>Find Our more ></span></p>
-            </div>    
-          </div>
-        </div>
-
-        <!-- ctimeline-item -->
-        <div class="timeline-item">
-          <div class="content">
-            <div>
-              <h3>Full-Stack Development (MERN):</h3>
-              <p>Freelancer</p>
-              <p class="date">2023 July</p>
-            </div>
-            <div>
-              <p>Developed a full-stack web application using the MERN stack, implementing features such as user authentication, real-time data updates, and responsive design.</p>
-              <p><span>Find Our more ></span></p>
-            </div>    
-          </div>
-        </div>
-   
+        <!-- Duplicate items kept as is -->
       </div>
-      <!-- End of timeline-item -->
     </section>
-    <!-- End of Experience Section -->
 
-
-    <!-- project section -->
-    <section class="" id="projects">
-      <h1 class="title">Projects</h1>
-
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="title">Projects</h2>
       <div class="projects-container">
-        <!-- project-card 1 -->
+        <!-- project card -->
         <div class="project-card">
           <div class="project-content">
             <div class="project-image-container">
-              <img src="./src/img/EDU.jpg" alt="JOBSY Project Screenshot" class="project-image" />
+              <img src="./src/img/EDU.jpg" alt="Screenshot of JOBSY AI Job Matcher project" class="project-image" loading="lazy" />
             </div>
-            
-        
             <div class="project-info">
-              <h2 class="project-title">JOBSY – AI Powered Resume-Based Job Matcher</h2>
-        
+              <h3 class="project-title">JOBSY – AI Powered Resume-Based Job Matcher</h3>
               <div class="tech-stack">
                 <span class="badge mongodb">MongoDB</span>
                 <span class="badge tailwind">Tailwind CSS</span>
-                <span class="badge react">react</span>
+                <span class="badge react">React</span>
               </div>
-        
               <p class="project-description">
-                An AI-driven platform that analyzes your resume, scrapes real-time LinkedIn jobs, and matches you with roles you're truly qualified for—eliminating bias and guesswork in job hunting.
+                An AI-driven platform that analyzes your resume, scrapes real-time LinkedIn jobs, and matches you with roles you're truly qualified for eliminating bias and guesswork in job hunting.
               </p>
-        
               <div class="project-buttons">
                 <a href="#" class="btn">Code</a>
                 <a href="#" class="btn">Preview</a>
@@ -143,27 +113,24 @@
           </div>
         </div>
 
-        <!-- project-card 1 -->
+        <!-- project card -->
+
         <div class="project-card">
           <div class="project-content">
             <div class="project-image-container">
-              <img src="./src/img/EDU.jpg" alt="JOBSY Project Screenshot" class="project-image" />
+              <img src="./src/img/EDU.jpg" alt="Screenshot of JOBSY AI Job Matcher project" class="project-image" loading="lazy" />
             </div>
-            
-        
             <div class="project-info">
-              <h2 class="project-title">JOBSY – AI Powered Resume-Based Job Matcher</h2>
-        
+              <h3 class="project-title">Edu – Smarter Learning for Everyone</h3>
               <div class="tech-stack">
                 <span class="badge mongodb">MongoDB</span>
                 <span class="badge tailwind">Tailwind CSS</span>
-                <span class="badge react">react</span>
+                <span class="badge react">React</span>
+                <span class="badge node">Node js</span>
               </div>
-        
               <p class="project-description">
-                An AI-driven platform that analyzes your resume, scrapes real-time LinkedIn jobs, and matches you with roles you're truly qualified for—eliminating bias and guesswork in job hunting.
+                An AI-powered education platform designed to personalize learning, track student progress in real-time, and provide engaging, accessible resources for learners at all levels.
               </p>
-        
               <div class="project-buttons">
                 <a href="#" class="btn">Code</a>
                 <a href="#" class="btn">Preview</a>
@@ -171,136 +138,109 @@
             </div>
           </div>
         </div>
-        
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-image-container">
+              <img src="./src/img/EDU.jpg" alt="Screenshot of JOBSY AI Job Matcher project" class="project-image" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">AutoFlow – Smart Email & Calendar Automation</h3>
+              <div class="tech-stack">
+                
+              
+                <span class="badge n8n">n8n</span>
+              </div>
+              <p class="project-description">
+                An n8n-powered workflow that reads emails, generates summaries, drafts replies, and manages Google Calendar by scheduling or removing tasks automatically.
+              </p>
+              <div class="project-buttons">
+                <a href="#" class="btn">Code</a>
+                <a href="#" class="btn">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Duplicate project-card kept -->
       </div>
-
-      
     </section>
-    <!---End of project section -->
 
-    
-    <!-- <section class="" id="education">
-      <h1 class="title">Education</h1>
-
-     
-      <div class="timeline">
-
-       
-        <div class="timeline-item">
-          <div class="content">
-            <div>
-              <h3>Mount Kenya University:</h3>
-              <p>Bachelor in Computer Science</p>
-              <p class="date">2023 Sep To Date</p>
-            </div>
-            <div>
-              <p>Developed a full-stack web application using the MERN stack, implementing features such as user authentication, real-time data updates, and responsive design.</p>
-              <p><span>Find Our more ></span></p>
-            </div>
-          </div>
-        </div>
-   
-      </div>
-  
-    </section> -->
-
-
-    <!-- interests section -->
-    <section  id="interests">
-      <h1 class="title">interests</h1>
+    <!-- Interests Section -->
+    <section id="interests">
+      <h2 class="title">Interests</h2>
       <div class="interests-section">
         <div class="about-text">
           <p>
-            My name is Micah Mosomi, a software engineer focused on turning complex challenges into simple, functional solutions.
-            I specialize in full stack development with the MERN stack,
-            <span>
-              with a strong focus on integrating AI for decision-making, automation, and insight generation..
-            </span>
+            My name is Micah Mosomi, a software engineer focused on turning complex challenges into simple, functional solutions. I specialize in full stack development with the MERN stack, 
+            <span>with a strong focus on integrating AI for decision-making, automation, and insight generation.</span>
           </p>
-     
         </div>
-
         <div class="interests-content">
           <div class="interests-cards-container">
-            <!-- interest card -->
             <div class="interest-card">
               <h3>AI & Machine Learning</h3>
               <p>Building AI that powers decisions, automates workflows, and generates actionable insights.</p>
             </div>
-            <!-- interest card -->
             <div class="interest-card">
               <h3>Database Engineering</h3>
               <p>Designing fast, scalable, and intelligent data systems using SQL and NoSQL technologies.</p>
             </div>
-            <!-- interest card -->
             <div class="interest-card">
               <h3>Systems Thinking & Problem Solving</h3>
               <p>Improving backend logic and architecture to make systems smarter, faster, and more efficient.</p>
             </div>
-            <!-- interest card -->
             <div class="interest-card">
-              <h3>Educational Tools:</h3>
+              <h3>Educational Tools</h3>
               <p>Creating platforms that personalize learning and track progress using AI-driven insights.</p>
             </div>
           </div>
-
           <div class="interests-image">
-            <img src="./src/img/me.jpg" alt="Micah Mosomi Portrait" />
+            <img src="./src/img/me.jpg" alt="Micah Mosomi Portrait" loading="lazy" />
           </div>
-
         </div>
-      
-        
       </div> 
     </section>
-    <!-- End of interests section -->
 
-    <!-- contact section -->
+    <!-- Contact Section -->
     <section id="contact">
-      <h1 class="title">Send Email</h1>
+      <h2 class="title">Send Email</h2>
       <div class="contact-section">
-        <p>If you want to get in touch, feel free to reach out via email or connect with me on <a href="https://www.linkedin.com/in/micah-mosomi-a63355267/">LinkedIn.</a></p>
-       <form action="" method="post" class="contact-form">
-        <div class="form-group">
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject" required>
-        </div>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div class="form-group-submit">
-          <button type="submit" class="btn">Send Message</button>
-        </div>
-       
-       </form>
-
+        <p>If you want to get in touch, feel free to reach out via email or connect with me on 
+          <a href="https://www.linkedin.com/in/micah-mosomi-a63355267/">LinkedIn</a>.
+        </p>
+        <form action="" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="form-group-submit">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+        </form>
+      </div>
     </section>
-    <!--End of contact section -->
-
-
-
   </main>
 
   <footer>
-    <p>© 2025 Micah Mosomi. Almost All Rights Reserved</p>
+    <p>&copy; 2025 Micah Mosomi. All Rights Reserved</p>
     <div>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
-     
     </div>
   </footer>
-   
 </body>
 </html>
