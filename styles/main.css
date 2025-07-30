@@ -227,8 +227,11 @@ nav ul li a{
   white-space: nowrap;
 }
 
-.attention{
+.contact{
   background-color: #1FC9A0;
+}
+.linkedin{
+  background-color: #3b82f6;
 }
 
 .social-links { 
