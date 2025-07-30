@@ -101,6 +101,13 @@ span{
   font-weight: 500;
   color: var(--span-color); 
 }
+
+h1, h2, h3 {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700; /* bold */
+  color: #FFB400;
+  margin: 0; /* remove default margin */
+}
 p{
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
@@ -182,7 +189,11 @@ nav ul li a{
 
 
 /* ABOUT SECTION STYLES*/
-
+.intro-text {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
 .profile-section {
   display: flex;
   align-items: center;
@@ -222,10 +233,36 @@ nav ul li a{
   padding: 1rem;
 }
 
-
-
-.icon {
+.icon{
   font-size: 18px;
+}
+
+.svg-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.svg-container p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 6px;
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+  
+
+}
+
+.tech-stack-container h2 {
+  font-size: 1.4rem;
+  color: #ffff; 
+  margin-bottom: 10px;
+
 }
 
 /* EXPERIENCE SECTION STYLES*/
@@ -298,15 +335,10 @@ nav ul li a{
 
 }
 
-@media (max-width: 768px) {
-  .timeline-item .content h3 {
-    padding-right: 18px;
-  }
-
-  .project-image {
-    width: 100%;
-  }
+.timeline-item .content h3 {
+  padding-right: 18px;
 }
+
 
 
 /* PROJECTS SECTION STYLES*/
@@ -389,7 +421,7 @@ nav ul li a{
   
 }
 
-.node{
+/* .node{
   background-color: #68a063; 
 }
 .mongodb {
@@ -402,7 +434,7 @@ nav ul li a{
 
 .react {
   background-color: #3b82f6;
-}
+} */
 .n8n{
   background-color: #ff4a11;
 }
