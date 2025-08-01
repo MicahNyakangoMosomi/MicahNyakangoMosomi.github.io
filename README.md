@@ -8,8 +8,7 @@ This is a personal developer portfolio for **Micah Mosomi**, a full-stack softwa
 
 ## 🚀 Live Preview
 
-**[🔗 View Portfolio](https://your-portfolio-link.com)**  
-> *(Replace with actual link when hosted)*
+**[🔗 View Portfolio](https://micahnyakangomosomi.github.io/)** 
 
 
 
@@ -21,8 +20,7 @@ This is a personal developer portfolio for **Micah Mosomi**, a full-stack softwa
 ## 🔧 Built With
 
 - **HTML5** – Semantically structured and SEO-optimized  
-- **CSS3** – Responsive layout with custom styling  
-- **Vanilla JavaScript** – *(Optional for future interactivity)*  
+- **CSS3** – Responsive layout with custom styling
 - **Accessible Markup** – Uses `aria-label`, `alt`, proper `nav` and `section` elements
 
 ---
