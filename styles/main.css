@@ -69,12 +69,12 @@
 [data-theme='light'] {
   --bg-primary: #ffffff;
   --text-primary: #16192f;
-  --text-secondary: #4b5563;
+  --text-secondary: #374151;
   --accent-primary: #FFB400;
   --accent-secondary: #b48d00;
   --nav-bg: rgba(255, 255, 255, 0.8);
-  --border-color: rgba(0, 0, 0, 0.1);
-  --card-bg: #f3f4f6;
+  --border-color: rgba(0, 0, 0, 0.15);
+  --card-bg: #f9fafb;
   --input-bg: #ffffff;
   --primary-color: #4b86b4;
   --secondary-color: #2a4d69;
@@ -234,9 +234,9 @@ section{
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  border: 1px solid #3a3d50;
+  border: 1px solid var(--border-color);
   border-radius: 1.5rem;
-  color: #fff;
+  color: var(--text-primary);
   text-decoration: none;
   background: transparent;
   font-family: sans-serif;
@@ -290,24 +290,35 @@ nav ul li a{
 }
 
 .theme-toggle {
-  background: none;
-  border: none;
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  transition: transform 0.3s ease;
+  z-index: 10001;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .theme-toggle:hover {
-  transform: scale(1.2);
+  transform: translateY(-50%) scale(1.1);
+  background-color: var(--accent-primary);
+  color: #16192f;
 }
 
 .theme-toggle svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
@@ -319,15 +330,13 @@ nav ul li a{
   display: none;
 }
 
-body:not([data-theme]) .sun-icon {
-  display: block;
-}
-body:not([data-theme]) .moon-icon {
-  display: none;
-}
-/* By default we are dark */
+/* Default state (dark) */
+body:not([data-theme]) .sun-icon { display: block; }
+body:not([data-theme]) .moon-icon { display: none; }
+
 [data-theme='dark'] .sun-icon { display: block; }
 [data-theme='light'] .moon-icon { display: block; }
+
 
 
 
@@ -592,8 +601,7 @@ body:not([data-theme]) .moon-icon {
   border-radius: 12px;
   font-size: 0.85rem;
   font-weight: 500;
-  color: white;
-  
+  color: #fff;
 }
 
 /* .node{
@@ -651,7 +659,7 @@ body:not([data-theme]) .moon-icon {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  border: 3px solid #1f2937;
+  border: 3px solid var(--border-color);
   transform: rotate(2deg);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -690,7 +698,7 @@ body:not([data-theme]) .moon-icon {
   line-height: 1.5;
 }
 .interest-card:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--card-bg);
 }
 
 @media (max-width: 768px) {
