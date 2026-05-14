@@ -107,6 +107,11 @@ h1, h2, h3 {
   font-weight: 700; /* bold */
   color: #FFB400;
   margin: 0; /* remove default margin */
+  transition: transform 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+  transform: scale(1.05);
 }
 p{
   font-family: 'Urbanist', sans-serif;
@@ -266,7 +271,6 @@ nav ul li a{
 }
 
 .icon-svg:hover {
-  transform: translateY(-5px) scale(1.1);
   filter: grayscale(0%);
 }
 .title-span{
@@ -366,13 +370,9 @@ nav ul li a{
 
 }
 .timeline-item .content:hover {
-  background-color: var(--background-color); /* slightly darker on hover */
+  background-color: var(--background-color);
   cursor: pointer;
-  transform: scale(1.02); /* slight zoom effect */
-  transition: transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: white; /* darker text on hover */
-
+  color: white;
 }
 
 .timeline-item .content h3 {
@@ -400,27 +400,25 @@ nav ul li a{
   gap: 24px;
   flex-wrap: wrap;
 }
-.project-image-container{
-  flex: 0 0 auto;
-  width: 300px; 
-  max-width: 100%;
-  border-radius: 10px;
+.project-image-container {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 
 .project-image {
-  max-width: 100%;
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  overflow: hidden;
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
+
 .project-image:hover {
-  transform: scale(1); /* zoom effect on hover */
-  
+  transform: scale(1.05);
 }
 
 .project-info {
@@ -431,13 +429,9 @@ nav ul li a{
 }
 
 .project-info:hover .project-title {
-  background-color: var(--background-color); /* slightly darker on hover */
   cursor: pointer;
-  transform: scale(1.07); /* slight zoom effect */
-  transition: transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: white; /* darker text on hover */
-
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .project-title {
@@ -557,8 +551,7 @@ nav ul li a{
   line-height: 1.5;
 }
 .interest-card:hover {
-  transform: translateY(-5px); /* lift effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 @media (max-width: 768px) {
@@ -679,8 +672,8 @@ footer div{
 }
 
 .float-btn:hover {
-  transform: scale(1.1) translateX(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  background-color: #1FC9A0;
+  border-color: white;
 }
 
 .float-btn.email {
