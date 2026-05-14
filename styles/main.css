@@ -57,10 +57,10 @@
   --text-secondary: #cbd5e1;
   --accent-primary: #FFB400;
   --accent-secondary: #fef08a;
-  --nav-bg: rgba(0, 0, 0, 0.2);
+  --nav-bg: rgba(0, 0, 0, 0.3);
   --border-color: rgba(255, 255, 255, 0.1);
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --input-bg: #1f2937;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --input-bg: rgba(31, 41, 55, 0.6);
   --white: #fff;
   --border-radius: 5px;
   --spacing: 1rem;
@@ -72,10 +72,10 @@
   --text-secondary: #374151;
   --accent-primary: #FFB400;
   --accent-secondary: #b48d00;
-  --nav-bg: rgba(255, 255, 255, 0.8);
-  --border-color: rgba(0, 0, 0, 0.15);
-  --card-bg: #f9fafb;
-  --input-bg: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.6);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --card-bg: rgba(255, 255, 255, 0.4);
+  --input-bg: rgba(255, 255, 255, 0.6);
   --primary-color: #4b86b4;
   --secondary-color: #2a4d69;
 }
@@ -277,10 +277,10 @@ nav ul {
   align-items: center;
   justify-content: space-around;
   border-radius: 30px; /* rounded corners */
-  backdrop-filter: blur(10px); /* blur effect */
+  backdrop-filter: blur(12px); /* blur effect */
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-color); /* subtle border */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
-
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* subtle shadow */
 } 
 nav ul li a{
   margin: 0 7px;
@@ -509,13 +509,15 @@ body:not([data-theme]) .moon-icon { display: none; }
 .timeline-item .content {
   color: var(--text-primary);
   background-color: var(--card-bg); 
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
   display: grid;
-  grid-template-columns:1fr 2fr;
-
+  grid-template-columns: 1fr 2fr;
 }
 .timeline-item .content:hover {
   background-color: var(--card-bg);
@@ -539,6 +541,12 @@ body:not([data-theme]) .moon-icon { display: none; }
   border-radius: 12px;
   overflow: hidden;
   padding: 20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
 .project-content {
@@ -680,12 +688,14 @@ body:not([data-theme]) .moon-icon { display: none; }
 
 
 .interest-card{
-  
-  background-color: transparent; /* dark background */
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 .interest-card h3 {
   font-size: 1.2rem;
@@ -720,10 +730,14 @@ body:not([data-theme]) .moon-icon { display: none; }
   gap: 20px;
   max-width: 600px;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 .contact-form:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
@@ -815,7 +829,8 @@ footer div{
   font-size: 14px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .float-btn:hover {
