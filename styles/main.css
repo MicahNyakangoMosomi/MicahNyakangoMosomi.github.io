@@ -107,11 +107,6 @@ h1, h2, h3 {
   font-weight: 700; /* bold */
   color: #FFB400;
   margin: 0; /* remove default margin */
-  transition: transform 0.3s ease;
-}
-
-h1:hover, h2:hover, h3:hover {
-  transform: scale(1.05);
 }
 p{
   font-family: 'Urbanist', sans-serif;
@@ -271,6 +266,7 @@ nav ul li a{
 }
 
 .icon-svg:hover {
+  transform: scale(1.2);
   filter: grayscale(0%);
 }
 .title-span{
@@ -693,6 +689,15 @@ footer div{
 }
 
 @media (max-width: 768px) {
+  .timeline-item .content {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .timeline-item .content h3 {
+    padding-right: 0;
+  }
+
   footer{
     flex-direction: column;
     text-align: center;
