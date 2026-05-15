@@ -241,6 +241,7 @@ section{
   font-family: sans-serif;
   font-size: 12px;
   transition: all 0.2s ease-in-out;
+  border: #fdbb00 solid 1px;
 }
 
 .btn:hover {
@@ -279,7 +280,7 @@ nav ul {
   backdrop-filter: blur(12px); /* blur effect */
   -webkit-backdrop-filter: blur(12px);
 }
-} 
+
 nav ul li a{
   margin: 0 7px;
   color: var(--text-primary); 
@@ -372,6 +373,7 @@ body:not([data-theme]) .moon-icon { display: none; }
   color: var(--text-primary);
   font-size: 14px;
   white-space: nowrap;
+  border: #b48d00 solid 1px ;
 }
 
 .contact{
