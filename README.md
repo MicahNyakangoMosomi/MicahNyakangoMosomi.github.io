@@ -2,7 +2,7 @@
 
 This is a personal developer portfolio for **Micah Mosomi**, a full-stack software engineer focused on the MERN stack, AI-driven solutions, and scalable backend architecture. The website showcases my skills, projects, education, interests, and contact details in a clean, responsive, and accessible design.
 
-<img width="1844" height="958" alt="image" src="https://github.com/user-attachments/assets/c75929c0-7d18-4ec6-8bac-72ec1572c191" />
+![alt text](./src/img/site-preview.png)
 
 ---
 
