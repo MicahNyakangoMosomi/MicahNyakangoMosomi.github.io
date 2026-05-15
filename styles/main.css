@@ -264,11 +264,11 @@ nav{
   align-items: center;
   justify-content: center;
   z-index: 1000; /* ensure it stays on top */
-  
+
 }
 nav ul {
   list-style: none;
-  width: 450px;
+  width: 400px;
   background-color: var(--nav-bg); 
   height: 50px;
   margin: 0;
@@ -279,6 +279,7 @@ nav ul {
   border-radius: 30px; /* rounded corners */
   backdrop-filter: blur(12px); /* blur effect */
   -webkit-backdrop-filter: blur(12px);
+    border: #b48d00 solid 1px;
 }
 
 nav ul li a{
@@ -296,8 +297,8 @@ nav ul li a{
   background-color: var(--nav-bg);
   backdrop-filter: blur(10px);
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   color: var(--text-primary);
   display: flex;
@@ -309,8 +310,6 @@ nav ul li a{
 
 .theme-toggle:hover {
   transform: translateY(-50%) scale(1.1);
-  background-color: var(--accent-primary);
-  color: #16192f;
 }
 
 .theme-toggle svg {
@@ -825,7 +824,7 @@ footer div{
 }
 
 .float-btn.email {
-  background-color: #3b82f6; /* Blue */
+  background-color: #d25e20; /* Blue */
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
